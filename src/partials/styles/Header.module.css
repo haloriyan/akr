@@ -1,0 +1,64 @@
+.Header {
+    position: fixed;
+    top: 0px;left: 0px;right: 0px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    padding: 0px 40px;
+    z-index: 5;
+}
+.Logo {
+    height: 30px;
+}
+.SearchForm {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex-basis: 40%;
+    display: flex;
+    gap: 20px;
+    height: 50px;
+    align-items: center;
+    padding: 0px 20px;
+}
+.SearchInput {
+    display: flex;
+    flex-grow: 1;
+    height: 48px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.Menu {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+.MenuItem {
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1b1b1b;
+    display: flex;
+    gap: 10px;
+    height: 50px;
+    padding: 0px 10px;
+    align-items: center;
+}
+
+@media (max-width: 480px) {
+    .Header {
+        padding: 0px 20px;
+        gap: 20px;
+        height: 70px;
+    }
+    .Menu,.SearchForm {
+        display: none;
+    }
+}

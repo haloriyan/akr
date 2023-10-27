@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+div {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+}
+section {
+  padding: 50px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+
+.content {
+  position: absolute;
+  top: 80px;left: 0px;right: 0px;
+  z-index: 1;
+}
+.content.user {
+  left: 20%;right: 20px;
+}
+.content.organizer {
+  left: 25%;right: 0px;
+  top: 75px;
+  padding: 20px;
+}
+.inline {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.title {
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 480px) {
+  section {
+    padding: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .content {
+    top: 90px;
+  }
+  .content.user {
+    left: 20px;right: 20px;
+  }
+  .content.organizer {
+    top: 130px;left: 0px;right: 0px;
+    padding-bottom: 100px;
+    z-index: 2;
   }
 }

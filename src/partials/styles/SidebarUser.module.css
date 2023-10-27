@@ -1,0 +1,151 @@
+.Sidebar {
+    background-color: #fff;
+    position: fixed;
+    top: 0px;left: 0px;bottom: 0px;
+    width: 20%;
+    padding: 20px;
+    z-index: 5;
+}
+.Logo {
+    height: 30px;
+    width: min-content;
+}
+.MenuArea {
+    margin-top: 40px;
+}
+.MenuItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    text-decoration: none;
+    height: 30px;
+    padding: 10px 15px;
+    margin-bottom: 0px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.MenuActive {
+    background-color: #f0f0f0;
+    font-weight: 700;
+}
+
+.OrganizerArea {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+.OrganizerItem {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    color: #212121;
+}
+.OrganizerLogo {
+    height: 40px;
+    aspect-ratio: 1;
+    background-color: #ddd;
+    border-radius: 8px;
+    background-size: cover;
+}
+.OrganizerName {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    flex-grow: 1;
+}
+.OrganizerLabel {
+    padding: 5px 12px;
+    border: 1px solid #CA0C64;
+    border-radius: 99px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #CA0C64;
+}
+.OrganizerCreate {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 40px;
+    font-size: 12px;
+}
+
+.SidebarMobile {
+    display: none;
+}
+.OrganizerAreaMobile {
+    display: none;
+}
+.Overlay {
+    position: fixed;
+    top: 0px;left: 0px;right: 0px;bottom: 0px;
+    background-color: #000000aa;
+    z-index: 4;
+    display: none;
+}
+.Title {
+    font-weight: 600;
+    color: #212121;
+    font-size: 24px;
+}
+
+@media (max-width: 480px) {
+    .SidebarMobile {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        position: fixed;
+        bottom: 0px;left: 0px;right: 0px;
+        height: 70px;
+        align-items: center;
+        border-top: 1px solid #ddd;
+        padding: 0px 20px;
+        z-index: 5;
+        background-color: #fff;
+    }
+    .SidebarMobile .MenuArea {
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        gap: 10px;
+    }
+    .SidebarMobile .MenuItem {
+        padding: 5px 10px;
+    }
+    .SidebarMobile .OrganizerLogo {
+        border: 1px solid #eee;
+    }
+
+    .OrganizerAreaMobile {
+        position: fixed;
+        bottom: 0px;left: 0px;right: 0px;
+        padding: 30px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        transition: 0.4s;
+        z-index: 5;
+    }
+    .Title {
+        font-size: 18px;
+    }
+    .OrganizerAreaClose {
+        background-color: #eee;
+        height: 32px;
+        aspect-ratio: 1;
+        border-radius: 99px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #777;
+    }
+}
