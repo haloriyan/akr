@@ -26,6 +26,7 @@ h4 {
 }
 .content.user {
   left: 20%;right: 20px;
+  padding: 20px;
 }
 .content.organizer {
   left: 25%;right: 0px;
@@ -48,13 +49,14 @@ h4 {
   }
   .content {
     top: 90px;
+    padding-bottom: 100px !important;
   }
   .content.user {
     left: 20px;right: 20px;
+    padding: 0px;
   }
   .content.organizer {
     top: 130px;left: 0px;right: 0px;
-    padding-bottom: 100px;
     z-index: 2;
   }
 }

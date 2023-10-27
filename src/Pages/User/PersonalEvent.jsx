@@ -39,7 +39,7 @@ const PersonalEvent = () => {
 
     return (
         <>
-            <div className="content user" style={{padding: 20}}>
+            <div className="content user">
                 <div className={styles.TitleArea}>
                     <h1 className={styles.Title}>Personal Events</h1>
                     <Toggler

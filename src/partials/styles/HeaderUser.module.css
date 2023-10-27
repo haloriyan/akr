@@ -103,6 +103,10 @@
         display: flex;
         flex-grow: 1;
     }
+    .Logo {
+        width: min-content;
+        height: 30px;
+    }
     .Toggler {
         border: 1px solid #ddd;
         height: 40px;
