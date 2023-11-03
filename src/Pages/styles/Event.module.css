@@ -1,0 +1,118 @@
+.Container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 20px 40px;
+}
+.Left {
+    min-width: 60%;
+    max-width: 60%;
+}
+.Right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.Title {
+    font-size: 24px;
+    color: #212121;
+    font-weight: 600;
+}
+.Navigator {
+    margin-bottom: 20px;
+}
+
+.Cover {
+    width: 100%;
+    aspect-ratio: 5/2;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.DescriptionArea {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.Summary {
+    border-radius: 12px;
+    padding: 24px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px 1px #eaeaea;
+}
+.SummaryTitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #212121;
+    margin-bottom: 10px;
+}
+.SummaryLocation {
+    font-size: 14px;
+    color: #777;
+}
+.SummaryLocationAction {
+    font-size: 14px;
+    color: #CA0C64;
+    font-weight: 600;
+    text-decoration: none;
+}
+.SummarySchedule {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #181818;
+}
+.SummaryOrganizer {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    gap: 20px;
+}
+.SummaryOrganizerLabel,
+.SummaryOrganizerArea {
+    display: flex;
+    flex-grow: 1;
+    font-size: 14px;
+    flex-direction: row;
+    align-items: center;
+}
+.SummaryOrganizerLabel {
+    color: #888;
+}
+.SummaryOrganizerArea {
+    justify-content: flex-end;
+    gap: 10px;
+}
+.SummaryOrganizerName {
+    font-weight: 600;
+}
+.SummaryOrganizerIcon {
+    height: 40px;
+    aspect-ratio: 1;
+    border-radius: 99px;
+    background-color: #ddd;
+    object-fit: cover;
+}
+
+@media (max-width: 480px) {
+    .Left,.Right {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .Container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .SummaryLocation {
+        font-size: 12px;
+    }
+    .SummaryLocationAction { font-size: 14px; }
+    .SummarySchedule {
+        font-size: 14px;
+    }
+}

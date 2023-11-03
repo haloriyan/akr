@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import HeaderUser from "../../partials/HeaderUser";
 import styles from "../styles/PersonalEvent.module.css";
 import SidebarSimplified from "../../partials/SidebarSimplified";
 import OrganizerMenu from "../../partials/OrganizerMenu";
 import SidebarUser from "../../partials/SidebarUser";
 import Toggler from "../../components/Toggler";
 import Event from "../../components/Event";
+import HeaderUser from "../../partials/HeaderUser";
 
 const OrganizerEvent = () => {
     const [viewing, setViewing] = useState('Upcoming');
@@ -59,7 +59,7 @@ const OrganizerEvent = () => {
                 <div className={styles.Inline} style={{marginTop: 20}}>
                     {
                         events.map((event, e) => (
-                            <Event maxWidth="32%" data={event} key={e} config={{
+                            <Event link="/event/dashboard" data={event} key={e} config={{
                                 coverStyle: {
                                     height: 160
                                 }

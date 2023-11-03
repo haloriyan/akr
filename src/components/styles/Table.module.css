@@ -1,0 +1,24 @@
+/* .Row {
+    display: flex;
+    flex-direction: row;
+}
+.Row.Heading {
+    background-color: red;
+    font-weight: 600;
+}
+.Cell {
+    display: flex;
+    flex-grow: 1;
+    padding: 10px;
+} */
+
+.Table {
+    border: none;
+}
+.Row.Heading {
+    background-color: #ecf0f1;
+    font-weight: 600;
+}
+.Cell {
+    padding: 10px;
+}

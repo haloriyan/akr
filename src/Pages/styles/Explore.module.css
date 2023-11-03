@@ -1,0 +1,14 @@
+.Content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.Container {
+    top: 140px !important;
+}
+
+@media (max-width: 480px) {
+    .Container {
+        top: 150px;
+    }
+}

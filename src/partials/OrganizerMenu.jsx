@@ -1,8 +1,9 @@
-import { BiChevronDown, BiChevronUp } from "react-icons/bi";
+import { BiChevronDown, BiChevronUp, BiPlusCircle } from "react-icons/bi";
 import styles from "./styles/OrganizerMenu.module.css";
 import Icons from "../icons";
 import { useState } from "react";
 import Separator from "../components/Separator";
+import Button from "../components/Button";
 
 const OrganizerMenu = ({active = null}) => {
     const [mobileShowMenu, setMobileShowMenu] = useState(false);
@@ -44,6 +45,22 @@ const OrganizerMenu = ({active = null}) => {
                     <a href="/organizer/settings" className={`${styles.MenuItem} ${active === 'settings' ? styles.MenuActive : ''}`}>
                         <img src={Icons.People} alt="Settings" />
                         <div className={styles.MenuText}>Settings</div>
+                    </a>
+
+                    <div style={{height: 20}}></div>
+
+                    <a href="/organizer/123/create-event" style={{textDecorationLine: 'none'}}>
+                        <Button justifyContent="flex-start">
+                            <BiPlusCircle />
+                            Create Event
+                        </Button>
+                    </a>
+                    <div style={{height: 10}}></div>
+                    <a href="/organizer/123/create-activity" style={{textDecorationLine: 'none'}}>
+                        <Button justifyContent="flex-start" accent="secondary" color="muted">
+                            <BiPlusCircle />
+                            Create Activity
+                        </Button>
                     </a>
                 </div>
             </div>
@@ -93,7 +110,7 @@ const OrganizerMenu = ({active = null}) => {
                         </a>
                         <a href="/organizer/settings" className={`${styles.MenuItem} ${active === 'settings' ? styles.MenuActive : ''}`}>
                             <img src={Icons.Calendar} alt="Personal Events" />
-                            <div className={styles.MenuText}>Settings</div>
+                            <div className={styles.MenuText}>Settingssss</div>
                         </a>
                     </div>
                 }

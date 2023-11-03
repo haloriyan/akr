@@ -1,0 +1,25 @@
+.Area {
+    position: relative;
+}
+.Input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    gap: 20px;
+    cursor: pointer;
+    height: 50px;
+}
+.SelectedItem {
+    display: flex;
+    flex-grow: 1;
+}
+.OptionArea {
+    position: absolute;
+    top: 50px;left: 0px;right: 0px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px 1px #ddd;
+}

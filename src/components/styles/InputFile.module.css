@@ -1,0 +1,26 @@
+.Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Area {
+    background-color: #CA0C6430;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #CA0C64;
+    cursor: pointer;
+}
+.Label {
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.Description {
+    font-size: 12px;
+    color: #444;
+    margin-top: 5px;
+}

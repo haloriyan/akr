@@ -1,0 +1,41 @@
+.Container {
+    display: flex;
+    flex-direction: row;
+}
+.ListArea {
+    background-color: #CA0C6430;
+    min-width: 35%;
+    flex-basis: 32%;
+    padding: 30px;
+    border-radius: 12px;
+}
+.Item {
+    padding: 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    color: #CA0C64;
+    cursor: pointer;
+}
+.Item.Active {
+    background-color: #fff;
+}
+.Content {
+    padding: 20px;
+    padding-top: 0px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.ContentTitle {
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.ContentDescription {
+    font-size: 16px;
+    color: #212121;
+    margin-top: 20px;
+}

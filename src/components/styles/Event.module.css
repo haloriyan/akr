@@ -4,10 +4,13 @@
     background-color: #fff;
     border: 1px solid #ddd;
     display: flex;
-    flex-basis: 31.8%;
-    max-width: 31.8%;
+    flex-basis: 29.5%;
+    max-width: calc(33.333% - 20px);
     flex-grow: 1;
     white-space: wrap;
+    text-decoration: none;
+    color: #212121;
+    flex-direction: column;
 }
 .Cover {
     aspect-ratio: 1.94/1;

@@ -1,0 +1,38 @@
+.CategoryFilter {
+    position: fixed;
+    top: 75px;left: 0px;right: 0px;
+    z-index: 3;
+    height: 60px;
+    background-color: #fff;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.CategoryFilter::-webkit-scrollbar {
+    height: 0px;
+}
+.CategoryItem {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+}
+.CategoryItem.Active {
+    border: 1px solid #CA0C6490;
+    /* background-color: #CA0C6420; */
+    color: #CA0C64;
+}
+.CategoryIcon {
+    height: 20px;
+    border-radius: 99px;
+}

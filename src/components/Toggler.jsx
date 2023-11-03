@@ -1,6 +1,6 @@
 import styles from "./styles/Toggler.module.css";
 
-const Toggler = ({options, value, setValue}) => {
+const Toggler = ({options, value, setValue, item = null}) => {
     return (
         <div className={styles.Area}>
             {
@@ -8,7 +8,7 @@ const Toggler = ({options, value, setValue}) => {
                     <div key={o} className={`${styles.Option} ${value === option ? styles.OptionActive: ''}`} onClick={() => {
                         setValue(option)
                     }}>
-                        {option}
+                        {item === null ? option : item(option, o, value === option)}
                     </div>
                 ))
             }

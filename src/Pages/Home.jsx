@@ -8,6 +8,7 @@ import Footer from "../partials/Footer";
 import Event from "../components/Event";
 
 import CategoryIcons from "../icons/categories";
+import EventScroller from "../components/EventScroller";
 
 const Home = () => {
     const [city, setCity] = useState('Surabaya');
@@ -32,6 +33,26 @@ const Home = () => {
             start: "2023-12-09 22:00:00",
             cover: "https://s3-ap-southeast-1.amazonaws.com/loket-production-sg/images/banner/20230905110542_64f6a91690d6f.jpg"
         },
+        {
+            title: "ASPEK DAN PERLINDUNGAN HUKUM ATAS MEREK",
+            start: "2023-11-27 18:00:00",
+            cover: "https://s3-ap-southeast-1.amazonaws.com/loket-production-sg/images/banner/20231012142401_65279f11e3b17.jpg"
+        },
+        {
+            title: "Rock in Solo Festival 2023",
+            start: "2023-12-09 22:00:00",
+            cover: "https://s3-ap-southeast-1.amazonaws.com/loket-production-sg/images/banner/20230905110542_64f6a91690d6f.jpg"
+        },
+        {
+            title: "Australia & UK Top Ranked Universities - Application Day",
+            start: "2023-06-26 12:00:00",
+            cover: "https://s3-ap-southeast-1.amazonaws.com/loket-production-sg/images/banner/20230922011910.jpg"
+        },
+        {
+            title: "[SOLO] MLBB SULTAN CUP RISING STAR",
+            start: "2023-10-07 14:00:00",
+            cover: "https://s3-ap-southeast-1.amazonaws.com/loket-production-sg/images/banner/20230926120219_651265db31ebb.jpg"
+        },
     ]
     const categories = [
         {name: "Exhibition", icon: CategoryIcons.Exhibition, event_count: 3},
@@ -50,7 +71,7 @@ const Home = () => {
 
     return (
         <>
-            <Header />
+            <Header expand={true} />
             <div className="content">
                 <div className={styles.JumboTop}>
                     <div className={styles.JumboTitle}>Platform Management
@@ -80,19 +101,8 @@ const Home = () => {
                 <section>
                     <h3 style={{marginTop: 0}}>Trending Events in Various Cities</h3>
                     <Chip options={['Surabaya', 'Jakarta', 'Medan', 'Balikpapan']} value={city} setValue={setCity} multiple={false} />
-
-                    <div className={styles.ScrollContainer} style={{flexDirection: 'row',marginTop: 20,gap: 20}}>
-                        {
-                            events.map((event, e) => (
-                                <Event data={event} key={e} />
-                            ))
-                        }
-                        {
-                            events.map((event, e) => (
-                                <Event data={event} key={e} />
-                            ))
-                        }
-                    </div>
+                    
+                    <EventScroller events={events} containerStyle={{marginTop: 20}} />
                 </section>
 
                 <section>

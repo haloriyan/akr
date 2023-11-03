@@ -1,0 +1,86 @@
+.Group {
+    margin: 10px 0px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+}
+.Inner {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 10px;
+}
+.Group label {
+    color: #aaa;
+    position: absolute;
+    top: 32%;left: 17px;
+    transition: 0.3s;
+    background-color: #fff;
+    padding: 5px 8px;
+    padding-right: 170px;
+    font-size: 90%;
+}
+input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+}
+input:read-only,
+input:read-only ~ label {
+    cursor: not-allowed;
+}
+
+input,textarea,select {
+    height: 55px;
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+    color: #444;
+    padding: 0px 25px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: 0.1s;
+}
+textarea {
+    height: 150px;
+}
+.no-style {
+    padding: 0px;
+    height: auto;
+    margin-top: 0px;
+    margin: 0px;
+    border: none;
+    background: none;
+}
+input::placeholder,textarea::placeholder {
+    color: #aaa;
+}
+input.text.primary::placeholder {
+    color: var(--primaryTransparent);
+}
+textarea { height: 120px;font-family: Arial;padding: 25px; }
+input:focus,textarea:focus,select:focus {
+    outline: none;
+}
+input:focus::placeholder,textarea:focus::placeholder {
+    color: #aaa;
+}
+
+input:focus ~ label,input:valid ~ label,
+textarea:focus ~ label,textarea:valid ~ label,label.active {
+    top: -2px;left: 17px;
+    font-size: 70%;
+    color: #444;
+    padding: 5px 8px;
+}
+
+input.secondary:focus ~ label,input.secondary:valid ~ label {
+    top: -2px;left: 10px;
+    font-size: 80%;
+    color: #999;
+    background-color: #fff;
+    padding: 5px 8px;
+}

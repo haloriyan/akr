@@ -4,7 +4,7 @@ import config from "../config";
 
 const Chip = ({value, setValue, options, itemStyle, containerStyle, rounded = 8, item = null, max = null, multiple = true}) => {
     return (
-        <div className={styles.Container}>
+        <div className={styles.Container} style={containerStyle}>
             {
                 options.map((option, o) => {
                     let vals = multiple ? [...value] : value;

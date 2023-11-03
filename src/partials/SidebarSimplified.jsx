@@ -23,12 +23,12 @@ const SidebarSimplified = () => {
                 </div>
 
                 <div className={styles.OrganizerArea}>
-                    <div className={styles.OrganizerItem}>
+                    <a href="/organizer/events" className={styles.OrganizerItem}>
                         <div className={styles.OrganizerLogo}></div>
-                    </div>
-                    <div className={styles.OrganizerItem}>
+                    </a>
+                    <a href="/organizer/events" className={styles.OrganizerItem}>
                         <div className={styles.OrganizerLogo}></div>
-                    </div>
+                    </a>
 
                     <div className={styles.CreateOrganizerButton}>
                         <BiPlusCircle />

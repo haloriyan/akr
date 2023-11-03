@@ -1,0 +1,21 @@
+.Area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 40px;
+}
+.Path {
+    color: #888;
+}
+.Title {
+    color: #333;
+    font-weight: 600;
+}
+
+@media (max-width: 480px) {
+    .Area {
+        font-size: 14px;
+        padding: 20px;
+    }
+}
